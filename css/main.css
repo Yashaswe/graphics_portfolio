@@ -1,11 +1,14 @@
 body {
   margin: 0;
   background-color: black;
+  color: #efefef;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
 }
 
 .wrapper {
   background-color: black;
-  width: 88%;
+  width: 82%;
   padding: 20px;
   color: #efefef;
   margin: auto;
@@ -18,10 +21,6 @@ body {
 }
 
 #portfolio-header {
-  color: #efefef;
-  font-family: "Raleway", serif;
-  font-optical-sizing: auto;
-
   background-color: black;
 }
 
@@ -37,10 +36,25 @@ body {
 #header-content {
   display: flex;
 
-  justify-content: space-evenly;
+  justify-content: space-between;
   justify-items: center;
 }
 
 #page_body {
   width: 100%;
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.images img {
+  width: 100%;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
