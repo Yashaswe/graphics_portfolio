@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.wrapper {
+  background-color: black;
+  width: 88%;
+  padding: 20px;
+  color: #efefef;
+  margin: auto;
+}
+
+#portfolio-header h1 {
+  background-color: black;
+  font-size: 42px;
+  font-weight: 100;
+}
+
+#portfolio-header {
+  color: #efefef;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+
+  background-color: black;
+}
+
+#portfolio-header p {
+  font-style: italic;
+  font-size: 17px;
+}
+
+.bio {
+  margin-top: 30px;
+}
+
+#header-content {
+  display: flex;
+
+  justify-content: space-evenly;
+  justify-items: center;
+}
+
+#page_body {
+  width: 100%;
+}
