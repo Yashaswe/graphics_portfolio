@@ -44,17 +44,37 @@ body {
   width: 100%;
 }
 
-.img-container {
+#assignment .img-container {
   display: flex;
   justify-content: space-evenly;
 }
 
-.images img {
+#assignment .images img {
   width: 100%;
 }
 
-.images {
+#assignment .images {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#assignment2 .img-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#assignment2 .img-container .images img {
+  width: 200px;
+}
+
+#assignment2 .img-container .imagesScene img {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+#assignment2 #a4img {
+  width: 250px;
 }
