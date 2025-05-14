@@ -98,6 +98,11 @@
         transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
 
+      #assignment10 .img-container .images img {
+        width: 180px;
+        height: 180px;
+      }
+
       .images img:hover {
         transform: scale(1.02);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -385,7 +390,7 @@
             <button class="prev">Previous</button>
             <button class="next">Next</button>
           </div>
-          <div class="page-indicator">Page 1 of 9</div>
+          <div class="page-indicator">Page 1 of 11</div>
           <div class="page-dots"></div>
         </div>
       </section>
@@ -446,7 +451,7 @@
             <button class="prev">Previous</button>
             <button class="next">Next</button>
           </div>
-          <div class="page-indicator">Page 2 of 9</div>
+          <div class="page-indicator">Page 2 of 11</div>
           <div class="page-dots"></div>
         </div>
       </section>
@@ -507,7 +512,7 @@
             <button class="prev">Previous</button>
             <button class="next">Next</button>
           </div>
-          <div class="page-indicator">Page 3 of 9</div>
+          <div class="page-indicator">Page 3 of 11</div>
           <div class="page-dots"></div>
         </div>
       </section>
@@ -553,7 +558,7 @@
             <button class="prev">Previous</button>
             <button class="next">Next</button>
           </div>
-          <div class="page-indicator">Page 4 of 9</div>
+          <div class="page-indicator">Page 4 of 11</div>
           <div class="page-dots"></div>
         </div>
       </section>
@@ -595,7 +600,7 @@
             <button class="prev">Previous</button>
             <button class="next">Next</button>
           </div>
-          <div class="page-indicator">Page 5 of 9</div>
+          <div class="page-indicator">Page 5 of 11</div>
           <div class="page-dots"></div>
         </div>
       </section>
@@ -633,7 +638,7 @@
             <button class="prev">Previous</button>
             <button class="next">Next</button>
           </div>
-          <div class="page-indicator">Page 6 of 9</div>
+          <div class="page-indicator">Page 6 of 11</div>
           <div class="page-dots"></div>
         </div>
       </section>
@@ -674,7 +679,7 @@
             <button class="prev">Previous</button>
             <button class="next">Next</button>
           </div>
-          <div class="page-indicator">Page 7 of 9</div>
+          <div class="page-indicator">Page 7 of 11</div>
           <div class="page-dots"></div>
         </div>
       </section>
@@ -729,7 +734,7 @@
             <button class="prev">Previous</button>
             <button class="next">Next</button>
           </div>
-          <div class="page-indicator">Page 8 of 9</div>
+          <div class="page-indicator">Page 8 of 11</div>
           <div class="page-dots"></div>
         </div>
       </section>
@@ -863,7 +868,195 @@
             <button class="prev">Previous</button>
             <button class="next" disabled>Next</button>
           </div>
-          <div class="page-indicator">Page 9 of 9</div>
+          <div class="page-indicator">Page 9 of 11</div>
+          <div class="page-dots"></div>
+        </div>
+      </section>
+      <section id="assignment10" class="portfolio-page" data-page="10">
+        <div class="wrapper">
+          <div class="description">
+            <h1>Mesh Smoothing | Part 10</h1>
+            <div class="project-container">
+              <div>
+                <p>
+                  Mesh smoothing using Shader Storage Buffer Objects (SSBOs) in
+                  OpenGL. I began by refactoring the Vertex and Mesh classes to
+                  parse a new mesh file format containing geometric data,
+                  normals, color, and neighbor relationships. I implemented
+                  dynamic toggling between flat and smooth shading, and original
+                  vs. computed normals, using keyboard callbacks. The project
+                  required setting up and managing multiple SSBOs to handle
+                  original, current, and updated vertex positions. I wrote GLSL
+                  shader functions to calculate flat and smooth normals and
+                  implemented three Laplacian smoothing algorithms based on a
+                  Eurographics’99 paper. Each algorithm updated vertex positions
+                  using different weighted combinations of neighbor, current,
+                  and original positions.
+                </p>
+              </div>
+              <h2
+                style="
+                  font-weight: 400;
+                  color: var(--accent-color);
+                  font-size: 24px;
+                  margin-bottom: 20px;
+                "
+              >
+                Bunny Mesh Smoothing
+              </h2>
+              <div class="img-container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <div class="images" style="flex: 0 0 20%; max-width: 20%;">
+                  <img src="a12/rabbit1.png" alt="Bunny Original Normal" width="180px" />
+                  <p class="sphere-description">Original Normal</p>
+                </div>
+                <div class="images" style="flex: 0 0 20%; max-width: 20%;">
+                  <img src="a12/rabbit4.png" alt="Bunny Computed Normal" />
+                  <p class="sphere-description">Computed Normal</p>
+                </div>
+                <div class="images" style="flex: 0 0 20%; max-width: 20%;">
+                  <img src="a12/rabbit2.png" alt="Bunny Flat Normal" />
+                  <p class="sphere-description">Flat Normal</p>
+                </div>
+                <div class="images" style="flex: 0 0 20%; max-width: 20%;">
+                  <img src="a12/rabbit3.png" alt="Bunny Computed Flat Normal" />
+                  <p class="sphere-description">Computed Flat Normal</p>
+                </div>
+              </div>
+
+              <h2
+                style="
+                  font-weight: 400;
+                  color: var(--accent-color);
+                  font-size: 24px;
+                  margin-bottom: 20px;
+                  margin-top: 40px;
+                "
+              >
+                Beethoven Mesh Smoothing
+              </h2>
+              <div class="img-container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <div class="images" style="flex: 0 0 20%; max-width: 20%;">
+                  <img src="a12/beethoven1.png" alt="Beethoven Original Normal" />
+                  <p class="sphere-description">Original Normal</p>
+                </div>
+                <div class="images" style="flex: 0 0 20%; max-width: 20%;">
+                  <img src="a12/beethoven4.png" alt="Beethoven Computed Normal" />
+                  <p class="sphere-description">Computed Normal</p>
+                </div>
+                <div class="images" style="flex: 0 0 20%; max-width: 20%;">
+                  <img src="a12/beethoven2.png" alt="Beethoven Flat Normal" />
+                  <p class="sphere-description">Flat Normal</p>
+                </div>
+                <div class="images" style="flex: 0 0 20%; max-width: 20%;">
+                  <img src="a12/beethoven3.png" alt="Beethoven Computed Flat Normal" />
+                  <p class="sphere-description">Computed Flat Normal</p>
+                </div>
+              </div>
+
+              <h2
+                style="
+                  font-weight: 400;
+                  color: var(--accent-color);
+                  font-size: 24px;
+                  margin-bottom: 20px;
+                  margin-top: 40px;
+                "
+              >
+                FootBone Mesh Smoothing
+              </h2>
+              <div class="img-container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <div class="images" style="flex: 0 0 20%; max-width: 20%;">
+                  <img src="a12/footbone1.png" alt="FootBone Original Normal" />
+                  <p class="sphere-description">Original Normal</p>
+                </div>
+                <div class="images" style="flex: 0 0 20%; max-width: 20%;">
+                  <img src="a12/footbone4.png" alt="FootBone Computed Normal" />
+                  <p class="sphere-description">Computed Normal</p>
+                </div>
+                <div class="images" style="flex: 0 0 20%; max-width: 20%;">
+                  <img src="a12/footbone2.png" alt="FootBone Flat Normal" />
+                  <p class="sphere-description">Flat Normal</p>
+                </div>
+                <div class="images" style="flex: 0 0 20%; max-width: 20%;">
+                  <img src="a12/footbone3.png" alt="FootBone Computed Flat Normal" />
+                  <p class="sphere-description">Computed Flat Normal</p>
+                </div>
+              </div>
+
+              <div style="margin-top: 40px">
+                <h2
+                  style="
+                    font-weight: 400;
+                    color: var(--accent-color);
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                  "
+                >
+                  Video Demonstrations
+                </h2>
+                <div class="img-container" style="display: flex; justify-content: space-between; margin-bottom: 30px;">
+                  <div style="flex: 0 0 30%; max-width: 30%;">
+                    <video width="100%" controls>
+                      <source src="a12/bunnyalgo1.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <p class="sphere-description">Algorithm 3.1</p>
+                  </div>
+
+                  <div style="flex: 0 0 30%; max-width: 30%;">
+                    <video width="100%" controls>
+                      <source src="a12/bunnyalgo2.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <p class="sphere-description">Algorithm 3.2</p>
+                  </div>
+
+                  <div style="flex: 0 0 30%; max-width: 30%;">
+                    <video width="100%" controls>
+                      <source src="a12/bunnyalgo3.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <p class="sphere-description">Algorithm 3.3</p>
+                  </div>
+                </div>
+
+                <div class="img-container" style="display: flex; justify-content: space-between;">
+                  <div style="flex: 0 0 30%; max-width: 30%;">
+                    <video width="100%" controls>
+                      <source src="a12/footbonesalgo1.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <p class="sphere-description">Algorithm 3.1</p>
+                  </div>
+
+                  <div style="flex: 0 0 30%; max-width: 30%;">
+                    <video width="100%" controls>
+                      <source src="a12/footbonesalgo2.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <p class="sphere-description">Algorithm 3.2</p>
+                  </div>
+
+                  <div style="flex: 0 0 30%; max-width: 30%;">
+                    <video width="100%" controls>
+                      <source src="a12/footbonesalgo3.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <p class="sphere-description">Algorithm 3.3</p>
+                  </div>
+                </div>
+              
+                
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="wrapper">
+          <div class="navigation">
+            <button class="prev">Previous</button>
+            <button class="next" disabled>Next</button>
+          </div>
+          <div class="page-indicator">Page 10 of 11</div>
           <div class="page-dots"></div>
         </div>
       </section>
@@ -997,10 +1190,11 @@
             <button class="prev">Previous</button>
             <button class="next" disabled>Next</button>
           </div>
-          <div class="page-indicator">Page 9 of 9</div>
+          <div class="page-indicator">Page 9 of 11</div>
           <div class="page-dots"></div>
         </div>
       </section>
+
       <footer>
         <div class="wrapper">
           <p
@@ -1021,7 +1215,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         // Get all pages and navigation buttons
         const pages = document.querySelectorAll(".portfolio-page");
-        const totalPages = 10; // Updated for 9 total pages
+        const totalPages = 11; // Updated for 9 total pages
         const prevButtons = document.querySelectorAll("#prev, .prev");
         const nextButtons = document.querySelectorAll("#next, .next");
 
